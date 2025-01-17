@@ -5,10 +5,18 @@ import { isValidPassword } from "../functions/passwordChecker.js";
 describe('Password Validation', () => {
     it('should invalidate passwords with less than 8 characters', () => {
 
-        const password = 'passwor';
+        const password = 'passw1@';
         
         const result = isValidPassword(password);
         
         expect(result).toBe(false);
+    });
+    it('should invalidate passwords with more than 8 characters', () => {
+
+        const password = 'password1@';
+        
+        const result = isValidPassword(password);
+        
+        expect(result).toBe(true);
     });
 });
