@@ -56,4 +56,11 @@ describe('Password Validation', () => {
 
         expect(result).toBe(true);
     });
+    it("should invalidate password with IPL", () => {
+        const password = "password1@iPl";
+
+        const result = isValidPassword(password);
+
+        expect(result).toBe(false);
+    });
 });

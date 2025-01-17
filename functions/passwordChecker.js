@@ -11,6 +11,10 @@ function isValidPassword(password) {
     if (!numbers.test(password)) {
         return false;
     }
+    const ipl = /ipl/i;
+    if (ipl.test(password)) {
+        return false;
+    }
     return true;
 }
 
