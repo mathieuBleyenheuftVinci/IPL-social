@@ -21,11 +21,18 @@ describe('Password Validation', () => {
         expect(result).toBe(true);
     });
 
-    it('should invalidate password with special characters', () => {
+    it('should validate password with special characters', () => {
         const password = 'password1@';
         
         const result = isValidPassword(password);
         
         expect(result).toBe(true);
+    });
+    it('should invalidate password with special characters', () => {
+        const password = 'password1';
+        
+        const result = isValidPassword(password);
+        
+        expect(result).toBe(false);
     });
 });
