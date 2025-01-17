@@ -11,8 +11,17 @@ describe('Password Validation', () => {
         
         expect(result).toBe(false);
     });
-    it('should invalidate passwords with more than 8 characters', () => {
+    
+    it('should validate passwords with more than 8 characters', () => {
 
+        const password = 'password1@';
+        
+        const result = isValidPassword(password);
+        
+        expect(result).toBe(true);
+    });
+
+    it('should invalidate password with special characters', () => {
         const password = 'password1@';
         
         const result = isValidPassword(password);
