@@ -49,4 +49,11 @@ describe('Password Validation', () => {
         
         expect(result).toBe(false);
     });
+    it("should validate password without IPL", () => {
+        const password = "password1@";
+
+        const result = isValidPassword(password);
+
+        expect(result).toBe(true);
+    });
 });
