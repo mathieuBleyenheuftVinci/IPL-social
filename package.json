@@ -1,0 +1,23 @@
+{
+  "name": "ipl-social",
+  "version": "1.0.0",
+  "description": "- Bleyenheuft Mathieu mathieu.bleyenheuft@student.vinci.be",
+  "homepage": "https://github.com/mathieuBleyenheuftVinci/IPL-social#readme",
+  "bugs": {
+    "url": "https://github.com/mathieuBleyenheuftVinci/IPL-social/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathieuBleyenheuftVinci/IPL-social.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jasmine": "^5.5.0"
+  }
+}
