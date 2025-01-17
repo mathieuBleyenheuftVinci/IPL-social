@@ -35,4 +35,11 @@ describe('Password Validation', () => {
         
         expect(result).toBe(false);
     });
+    it('should validate password with a number', () => {
+        const password = 'password1@';
+        
+        const result = isValidPassword(password);
+        
+        expect(result).toBe(true);
+    });
 });
