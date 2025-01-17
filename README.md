@@ -12,3 +12,5 @@
 
 - npm run test
 
+-  ./functions contains the function "isValid" in the file "passwordChecker.js"
+   ./spec contains the test in the file "passwordChecker.test.js"
