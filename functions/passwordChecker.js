@@ -7,6 +7,10 @@ function isValidPassword(password) {
     if (!specialCharacters.test(password)) {
         return false;
     }
+    const numbers = /[0-9]/;
+    if (!numbers.test(password)) {
+        return false;
+    }
     return true;
 }
 

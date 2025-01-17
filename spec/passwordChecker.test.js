@@ -42,4 +42,11 @@ describe('Password Validation', () => {
         
         expect(result).toBe(true);
     });
+    it('should invalidate password without a number', () => {
+        const password = 'password@';
+        
+        const result = isValidPassword(password);
+        
+        expect(result).toBe(false);
+    });
 });
